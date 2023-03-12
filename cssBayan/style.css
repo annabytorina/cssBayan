@@ -28,8 +28,22 @@ h1 {
     border-bottom: 1px solid #858585;
 }
 
+h3 {
+    color: purple;
+}
+
+.h3_open {
+    color: #000000;
+}
+
 .accordion {
+    width: 500px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.item {
+    border-bottom: 1px solid #858585;
 }
 
 .item_header {
@@ -40,12 +54,39 @@ h1 {
 }
 
 .icon {
+    display: none;
     width: 20px;
     height: 20px;
     background-image: url("./assets/icons/down-arrow-10.svg");
 }
 
+.icon_cross {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/cross-23.svg");
+}
+
+.accordion:hover h3 {
+    color: #000000;
+}
+
+.accordion:hover .icon, .accordion:hover .icon_cross {
+    display: block;
+    transition: 0.3s;
+}
+
+.item_content {
+    display: none;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .item_content > img {
     width: 300px;
+}
+
+.meme1 {
+    display: block;
 }
 
